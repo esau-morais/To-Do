@@ -197,7 +197,7 @@ form {
 }
 
 .task::after {
-  content: "";
+  content: none;
   position: absolute;
   right: 0;
   left: 0;
@@ -294,9 +294,6 @@ form {
 @media (max-width: 439px){
   .task{
     font-size: 80%;
-  }
-  .task label::after{
-    content: none
   }
 }
 
