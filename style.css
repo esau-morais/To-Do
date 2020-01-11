@@ -197,7 +197,7 @@ form {
 }
 
 .task::after {
-  content: none;
+  content: "";
   position: absolute;
   right: 0;
   left: 0;
@@ -241,7 +241,7 @@ form {
 }
 
 .task label::after {
-  content: "";
+  content: none;
   position: absolute;
   left: 0;
   right: 0;
