@@ -295,25 +295,19 @@ form {
   .task{
     font-size: 80%;
   }
+  .task label::after{
+    content: none
+  }
 }
 
 @media (max-width: 393px){
   .list-title{
     font-size: 98%;
   }
-  .new.task{
-    width: 90%
-  }
 }
 
 @media (max-width: 365px){
   .list-title{
     font-size: 88%;
-  }
-}
-
-@media (max-width: 320px){
-  .task{
-    font-size: 70%;
   }
 }
