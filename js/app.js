@@ -1,4 +1,5 @@
 // Select the Elements
+const themeBtn = document.querySelector(".theme");
 const clear = document.querySelector(".clear");
 const dateElement = document.getElementById("date");
 const list = document.getElementById("list");
@@ -113,6 +114,11 @@ function removeToDo(element) {
 
     LIST[element.id].trash = true;
 }
+
+// change background color
+themeBtn.addEventListener('click', () => {
+    document.body.style.background = 'rgba(0, 0, 0, 0.8)';
+});
 
 // target the items created dynamically
 
