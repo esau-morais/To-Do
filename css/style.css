@@ -153,28 +153,6 @@ body {
 }
 
 .add-to-do input::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: #4162f6;
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 20px;
-}
-
-.add-to-do input::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #4162f6;
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 20px;
-}
-
-.add-to-do input:-ms-input-placeholder {
-  /* IE 10+ */
-  color: #4162f6;
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 20px;
-}
-
-.add-to-do input:-moz-placeholder {
-  /* Firefox 18- */
   color: #4162f6;
   font-family: 'Titillium Web', sans-serif;
   font-size: 20px;
