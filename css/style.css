@@ -1,4 +1,6 @@
-*, *::before, *::after{
+*,
+*::before,
+*::after {
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -13,6 +15,8 @@ body {
 
 /* ------------ container ------------ */
 .container {
+  position: relative;
+  padding: 10px;
   width: 380px;
   margin: 0 auto;
 }
