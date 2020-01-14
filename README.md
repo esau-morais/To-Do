@@ -17,6 +17,6 @@ Before school class begin
 JavaScript
 
 # Other 'Programming Languages'
-HTML
-CSS
+HTML <br>
+CSS <br>
 ReactJS (Optional)
