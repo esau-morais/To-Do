@@ -30,7 +30,7 @@ if (data) {
 // load items to the user's interface
 function loadList(array) {
   array.forEach(function (item) {
-      addToDo(item.name, item.id, item.done, item.trash);
+    addToDo(item.name, item.id, item.done, item.trash);
   });
 }
 
@@ -55,7 +55,7 @@ dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 function addToDo(toDo, id, done, trash) {
 
   if (trash) {
-      return;
+    return;
   }
 
   const DONE = done ? CHECK : UNCHECK;
@@ -76,25 +76,25 @@ function addToDo(toDo, id, done, trash) {
 // add an item to the list user the enter key
 document.addEventListener("keyup", function (even) {
   if (event.keyCode == 13) {
-      const toDo = input.value;
+    const toDo = input.value;
 
-      // if the input isn't empty
-      if (toDo) {
-          addToDo(toDo, id, false, false);
+    // if the input isn't empty
+    if (toDo) {
+      addToDo(toDo, id, false, false);
 
-          LIST.push({
-              name: toDo,
-              id: id,
-              done: false,
-              trash: false
-          });
+      LIST.push({
+        name: toDo,
+        id: id,
+        done: false,
+        trash: false
+      });
 
-          // add item to localstorage ( this code must be added where the LIST array is updated)
-          localStorage.setItem("TODO", JSON.stringify(LIST));
+      // add item to localstorage ( this code must be added where the LIST array is updated)
+      localStorage.setItem("TODO", JSON.stringify(LIST));
 
-          id++;
-      }
-      input.value = "";
+      id++;
+    }
+    input.value = "";
   }
 });
 
@@ -116,8 +116,14 @@ function removeToDo(element) {
 }
 
 // change background color
+let bg_colors = ['rgba(0, 0, 0, 0.1)', 'rgba(0, 0, 0, 0.8)']
+let color = 1
 themeBtn.addEventListener('click', () => {
-  document.body.style.background = 'rgba(0, 0, 0, 0.8)';
+  if (color >= bg_colors.length) {
+    color = 0;
+  }
+  document.body.style.backgroundColor = bg_colors[color];
+  color++;
 });
 
 // target the items created dynamically
@@ -127,9 +133,9 @@ list.addEventListener("click", function (event) {
   const elementJob = element.attributes.job.value; // complete or delete
 
   if (elementJob == "complete") {
-      completeToDo(element);
+    completeToDo(element);
   } else if (elementJob == "delete") {
-      removeToDo(element);
+    removeToDo(element);
   }
 
   // add item to localstorage ( this code must be added where the LIST array is updated)
