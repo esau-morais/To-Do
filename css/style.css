@@ -5,6 +5,14 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+::-webkit-scrollbar{
+  width: 7.5px;
+}
+::-webkit-scrollbar-thumb{
+  background: #b8b8b8;
+  border-radius: 15px;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -104,10 +112,12 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .item i.co {
-  position: absolute;
+  position: sticky;
   font-size: 25px;
   padding-left: 5px;
   left: 15px;
