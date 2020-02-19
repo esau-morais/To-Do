@@ -116,28 +116,14 @@ function removeToDo(element) {
 }
 
 // change background color
-let bg_colors = ['rgba(0, 0, 0, 0.1)', 'rgba(0, 0, 0, 0.8)']
-let color = 1
+let bg_colors = ['rgba(0, 0, 0, 0.1)', 'rgba(0, 0, 0, 0.8)'];
+let color = 1;
 themeBtn.addEventListener('click', () => {
   if (color >= bg_colors.length) {
     color = 0;
   }
   document.body.style.backgroundColor = bg_colors[color];
-  document.querySelector(".content").style.backgroundColor = bg_colors[color];
   color++;
-});
-
-// change color
-let colors = ['#000', '#FFF']
-let mainColor = 1
-themeBtn.addEventListener('click', () => {
-  if (mainColor >= colors.length) {
-    mainColor = 0;
-  }
-  document.querySelector("i.co").style.color = colors[mainColor];
-  document.querySelector("i.de").style.color = colors[mainColor];
-  document.querySelector("p.text").style.color = colors[mainColor];
-  mainColor++;
 });
 
 // target the items created dynamically
