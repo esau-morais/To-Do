@@ -43,12 +43,12 @@ clear.addEventListener("click", function () {
 // Show todays date
 const options = {
   weekday: "long",
-  month: "short",
-  day: "numeric"
+  day: "numeric",
+  month: "long",
 };
 const today = new Date();
 
-dateElement.innerHTML = today.toLocaleDateString("en-US", options);
+dateElement.innerHTML = today.toLocaleDateString("pt-BR", options);
 
 // add to do function
 
@@ -81,7 +81,7 @@ document.addEventListener("keyup", function (even) {
     // if the input isn't empty
     if (toDo) {
       addToDo(toDo, id, false, false);
-
+      document.querySelector(".content");
       LIST.push({
         name: toDo,
         id: id,
@@ -123,7 +123,21 @@ themeBtn.addEventListener('click', () => {
     color = 0;
   }
   document.body.style.backgroundColor = bg_colors[color];
+  document.querySelector(".content").style.backgroundColor = bg_colors[color];
   color++;
+});
+
+// change color
+let colors = ['#000', '#FFF']
+let mainColor = 1
+themeBtn.addEventListener('click', () => {
+  if (mainColor >= colors.length) {
+    mainColor = 0;
+  }
+  document.querySelector("i.co").style.color = colors[mainColor];
+  document.querySelector("i.de").style.color = colors[mainColor];
+  document.querySelector("p.text").style.color = colors[mainColor];
+  mainColor++;
 });
 
 // target the items created dynamically

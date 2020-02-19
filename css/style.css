@@ -6,11 +6,11 @@
 }
 
 ::-webkit-scrollbar{
-  width: 7.5px;
+  width: 8px;
 }
 ::-webkit-scrollbar-thumb{
   background: #b8b8b8;
-  border-radius: 15px;
+  border-radius: 6px;
 }
 
 body {
@@ -90,7 +90,7 @@ body {
   width: 380px;
   height: 350px;
   max-height: 350px;
-  background-color: #FFF;
+  background-color: #0000001a;
   overflow: auto;
 }
 
@@ -139,7 +139,6 @@ body {
   font-size: 20px;
   left: 50px;
   top: 5px;
-  background-color: #FFF;
   max-width: 285px;
 }
 
