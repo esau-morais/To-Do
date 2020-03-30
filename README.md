@@ -10,9 +10,6 @@ To do list JS app for my life management
 6. To update data in other devices
 7. To create list of a lot tasks
 
-# Goal End Limit Time 
-Before school class begin
-
 # Main Programming Language
 JavaScript
 
