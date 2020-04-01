@@ -188,7 +188,7 @@ body {
   padding-left: 10px;
 }
 
-.add-to-do input::-webkit-input-placeholder {
+.add-to-do input, .add-to-do input::-webkit-input-placeholder {
   color: #4162f6;
   font-family: 'Titillium Web', sans-serif;
   font-size: 20px;
