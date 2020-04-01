@@ -4,6 +4,8 @@ const clear = document.querySelector(".clear");
 const dateElement = document.getElementById("date");
 const list = document.getElementById("list");
 const input = document.getElementById("input");
+const content = document.getElementById("content");
+const addContent = document.getElementById("addToDo");
 
 // Classes names
 const CHECK = "fa-check-circle";
@@ -110,19 +112,27 @@ function completeToDo(element) {
 
 // remove to do
 function removeToDo(element) {
-  element.parentNode.parentNode.removeChild(element.parentNode);
+  element.parentNode.parentNode.recontentmoveChild(element.parentNode);
 
   LIST[element.id].trash = true;
 }
 
 // change background color
-let bg_colors = ['rgba(0, 0, 0, 0.1)', 'rgba(0, 0, 0, 0.8)'];
+let bg_colors = ['#CCC', '#101010'];
+let content_colors = ['#FFF', '#1F1F1F'];
+let content_color = ['#121212', '#FFF']
 let color = 1;
 themeBtn.addEventListener('click', () => {
-  if (color >= bg_colors.length) {
+  if (color >= bg_colors.length &&
+    color >= content_colors.length &&
+    color >= content_color.length) {
     color = 0;
   }
   document.body.style.backgroundColor = bg_colors[color];
+  content.style.background = content_colors[color];
+  addContent.style.background = content_colors[color];
+  content.style.color = content_color[color];
+  addContent.style.color = content_color[color];
   color++;
 });
 
