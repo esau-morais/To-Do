@@ -29,11 +29,8 @@
 }
 
 .darkmode {
-  --clr-light: #fdffc4;
-  --clr-dark: #00332a;
-  --clr-primary: #202302;
-  --clr-secondary: #00100d;
-  --clr-accent: #ff7750;
+  --clr-light: #fff;
+  --clr-dark: #121212;
 
   --foreground: var(--clr-light);
   --background: var(--clr-dark);
