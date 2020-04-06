@@ -142,10 +142,6 @@ if (darkMode === 'enabled') {
   enableDarkMode();
 }
 
-let bg_colors = ['#CCC', '#101010'];
-let content_colors = ['#FFF', '#1F1F1F'];
-let content_color = ['#121212', '#FFF']
-let color = 1;
 themeBtn.addEventListener('click', () => {
   darkMode = localStorage.getItem('darkMode');
   if (darkMode !== 'enabled') {
@@ -154,17 +150,6 @@ themeBtn.addEventListener('click', () => {
   } else {  
     disableDarkMode(); 
   }
-  if (color >= bg_colors.length &&
-    color >= content_colors.length &&
-    color >= content_color.length) {
-    color = 0;
-  }
-  document.body.style.backgroundColor = bg_colors[color];
-  content.style.background = content_colors[color];
-  addContent.style.background = content_colors[color];
-  content.style.color = content_color[color];
-  addContent.style.color = content_color[color];
-  color++;
 });
 
 // target the items created dynamically
