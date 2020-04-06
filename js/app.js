@@ -1,5 +1,5 @@
 // Select the Elements
-const themeBtn = document.querySelector(".theme");
+const themeBtn = document.querySelector("#dark-mode-toggle");
 const clear = document.querySelector(".clear");
 const dateElement = document.getElementById("date");
 const list = document.getElementById("list");
