@@ -125,6 +125,8 @@ let darkMode = localStorage.getItem('darkMode');
 const enableDarkMode = () => {
   // 1. Add the class to the body
   document.body.classList.add('darkmode');
+  content.classList.add('cont-dark');
+  addContent.classList.add('cont-dark');
   // 2. Update darkMode in localStorage
   localStorage.setItem('darkMode', 'enabled');
 }
@@ -132,6 +134,8 @@ const enableDarkMode = () => {
 const disableDarkMode = () => {
   // 1. Remove the class from the body
   document.body.classList.remove('darkmode');
+  content.classList.remove('cont-dark');
+  addContent.classList.remove('cont-dark');
   // 2. Update darkMode in localStorage 
   localStorage.setItem('darkMode', null);
 }
