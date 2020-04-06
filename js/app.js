@@ -117,12 +117,43 @@ function removeToDo(element) {
   LIST[element.id].trash = true;
 }
 
-// change background color
+// dark mode toggle
+
+// check for saved 'darkMode' in localStorage
+let darkMode = localStorage.getItem('darkMode');
+
+const enableDarkMode = () => {
+  // 1. Add the class to the body
+  document.body.classList.add('darkmode');
+  // 2. Update darkMode in localStorage
+  localStorage.setItem('darkMode', 'enabled');
+}
+
+const disableDarkMode = () => {
+  // 1. Remove the class from the body
+  document.body.classList.remove('darkmode');
+  // 2. Update darkMode in localStorage 
+  localStorage.setItem('darkMode', null);
+}
+
+// If the user already visited and enabled darkMode
+// start things off with it on
+if (darkMode === 'enabled') {
+  enableDarkMode();
+}
+
 let bg_colors = ['#CCC', '#101010'];
 let content_colors = ['#FFF', '#1F1F1F'];
 let content_color = ['#121212', '#FFF']
 let color = 1;
 themeBtn.addEventListener('click', () => {
+  darkMode = localStorage.getItem('darkMode');
+  if (darkMode !== 'enabled') {
+    enableDarkMode();
+  // if it has been enabled, turn it off  
+  } else {  
+    disableDarkMode(); 
+  }
   if (color >= bg_colors.length &&
     color >= content_colors.length &&
     color >= content_color.length) {
