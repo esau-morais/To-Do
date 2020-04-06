@@ -70,10 +70,11 @@ body {
   position: absolute;
   z-index: 100;
   right: 1em;
-  color: var(--foreground);
+  color: #FFF;
   padding: 4px;
   background: transparent;
   cursor: pointer;
+  border: none;
   border-radius: 5px;
   width: 30px;
   height: 30px;
