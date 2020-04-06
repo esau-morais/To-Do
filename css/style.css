@@ -15,7 +15,7 @@
 }
 
 :root {
-  --clr-light: #fff;
+  --clr-light: #ccc;
   --clr-dark: #121212;
 
   --foreground: var(--clr-dark);
@@ -69,7 +69,6 @@ body {
 .dark-mode-toggle {
   position: absolute;
   z-index: 100;
-  top: 1em;
   right: 1em;
   color: var(--foreground);
   border: 2px solid currentColor;
