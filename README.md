@@ -1,21 +1,16 @@
-# To-Do-List-App
+# To-Do List App
 To do list JS app for my life management 
 
-# Goal
-1. To add tasks
-2. To delete tasks
-3. To update tasks
-4. To clear all tasks
-5. To update data on a local storage
-6. To update data in other devices
-7. To create list of a lot tasks
+![To Do](https://cdn.dribbble.com/users/79571/screenshots/10753505/media/115e61882c77c6b2e2dcd5d3d8a519cb.png)
 
-# Main Programming Language
-JavaScript
-
-# Other 'Programming Languages'
-HTML <br>
-CSS <br>
+## Goals
+- [ ] To add tasks
+- [ ] To delete tasks
+- [ ] To update tasks
+- [ ] To clear all tasks
+- [ ] To update data on a local storage
+- [ ] To update data in other devices
+- [ ] To create list of a lot tasks
 
 # Access to website
 [To-Dos](https://esau-morais.github.io/To-Do/)
