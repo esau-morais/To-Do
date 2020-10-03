@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.date{
+font-weight: 500;
+color: #4f98ca;
+}
+.addTodo-label{
+  color: #4f98ca;
+}
+.btn-delete{
+  position: relative;
+  margin-right: 5px;
+  float:right;
+  background: none;
+  border: none;
+  padding:0px;
+  
+}
+
+.collection-item{
+  position:relative;
+
+}
+
+.fa-trash-alt{
+  font-weight:normal;
+}
+
+.fa-trash-alt:hover {
+  color: red;
+}
+
+
